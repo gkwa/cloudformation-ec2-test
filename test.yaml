@@ -143,6 +143,7 @@ Resources:
   PublicSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
+      CidrBlock: 10.0.0.0/24
       VpcId: !Ref VPC
     Metadata:
       'AWS::CloudFormation::Designer':
@@ -176,6 +177,7 @@ Resources:
   WebServerSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
+      GroupDescription: Allow http to client host
       VpcId: !Ref VPC
     Metadata:
       'AWS::CloudFormation::Designer':
@@ -207,6 +209,7 @@ Resources:
     Type: 'AWS::EC2::Route'
     Properties:
       RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 5f5f9efc-9d7d-4b55-a6c6-2039a287aab4
