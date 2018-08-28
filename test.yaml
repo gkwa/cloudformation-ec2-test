@@ -158,6 +158,7 @@ Resources:
   WebServerInstance:
     Type: 'AWS::EC2::Instance'
     Properties:
+      InstanceType: t2.nano
       NetworkInterfaces:
         - SubnetId: !Ref PublicSubnet
         - SubnetId: !Ref PublicSubnet
