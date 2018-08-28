@@ -1,11 +1,3 @@
-AWS::EC2::Route
-PublicRoute
-Exactly one of
-DestinationCidrBlock
-DestinationIpv6CidrBlock
-must be specified and not empty
-
-
 AWSTemplateFormatVersion: 2010-09-09
 Metadata:
   'AWS::CloudFormation::Designer':
