@@ -10,9 +10,9 @@ Metadata:
         'y': 90
       z: 0
       embeds:
-        - 4520f60b-70cd-418d-814e-edf1a6f3850a
         - 119ba73b-ffee-48d3-94c5-449953b37748
         - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
+        - 4520f60b-70cd-418d-814e-edf1a6f3850a
     2dd5628e-70d2-4c79-9ea4-3788f78dc1aa:
       size:
         width: 230
@@ -25,6 +25,8 @@ Metadata:
       embeds:
         - 8556b0ff-f17a-4f97-b265-e2b3828d4171
       iscontainedinside:
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
@@ -58,6 +60,8 @@ Metadata:
         - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
         - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
         - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
+        - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
+        - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
       dependson:
         - 5f5f9efc-9d7d-4b55-a6c6-2039a287aab4
     119ba73b-ffee-48d3-94c5-449953b37748:
@@ -71,6 +75,8 @@ Metadata:
       parent: fce72dbc-35c2-4ee7-9967-d29b9b654cc9
       embeds: []
       iscontainedinside:
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
@@ -112,6 +118,8 @@ Metadata:
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
+        - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
       dependson:
         - 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
     5f5f9efc-9d7d-4b55-a6c6-2039a287aab4:
@@ -127,26 +135,10 @@ Metadata:
       iscontainedinside:
         - 4520f60b-70cd-418d-814e-edf1a6f3850a
         - 4520f60b-70cd-418d-814e-edf1a6f3850a
+        - 4520f60b-70cd-418d-814e-edf1a6f3850a
+        - 4520f60b-70cd-418d-814e-edf1a6f3850a
       dependson:
         - 7738705e-4bad-4c81-bb4e-39aa7b17fc6b
-    fc6457d3-5403-4528-bac8-80ea0d497cf2:
-      source:
-        id: 5f5f9efc-9d7d-4b55-a6c6-2039a287aab4
-      target:
-        id: 7738705e-4bad-4c81-bb4e-39aa7b17fc6b
-      z: 3
-    1451e860-5dde-45ca-8985-de739d14c91f:
-      source:
-        id: 8556b0ff-f17a-4f97-b265-e2b3828d4171
-      target:
-        id: 5f5f9efc-9d7d-4b55-a6c6-2039a287aab4
-      z: 4
-    61008624-d7bb-42c9-b2b6-28dd34da1c49:
-      source:
-        id: 4520f60b-70cd-418d-814e-edf1a6f3850a
-      target:
-        id: 2dd5628e-70d2-4c79-9ea4-3788f78dc1aa
-      z: 5
 Resources:
   PublicSubnet:
     Type: 'AWS::EC2::Subnet'
