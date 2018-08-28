@@ -1,13 +1,13 @@
 AWSTemplateFormatVersion: 2010-09-09
 Metadata:
-  AWS::CloudFormation::Designer:
+  'AWS::CloudFormation::Designer':
     fce72dbc-35c2-4ee7-9967-d29b9b654cc9:
       size:
         width: 140
         height: 140
       position:
         x: 154.00390625
-        y: 95.01171875
+        'y': 95.01171875
       z: 0
       embeds: []
     3d0c680b-30cf-4bef-863b-cd0a35ce50f3:
@@ -16,7 +16,7 @@ Metadata:
         height: 60
       position:
         x: 330
-        y: 130
+        'y': 130
       z: 0
       embeds: []
       dependson:
@@ -27,7 +27,7 @@ Metadata:
         height: 60
       position:
         x: 40
-        y: 130
+        'y': 130
       z: 0
       dependson:
         - fce72dbc-35c2-4ee7-9967-d29b9b654cc9
@@ -39,28 +39,28 @@ Metadata:
       z: 11
 Resources:
   EC2VPC1MWNT:
-    Type: AWS::EC2::VPC
+    Type: 'AWS::EC2::VPC'
     Properties:
       CidrBlock: 10.0.0.0/24
     Metadata:
-      AWS::CloudFormation::Designer:
+      'AWS::CloudFormation::Designer':
         id: fce72dbc-35c2-4ee7-9967-d29b9b654cc9
   EC2I1XAHY:
-    Type: AWS::EC2::Instance
+    Type: 'AWS::EC2::Instance'
     Properties:
       KeyName: taylor-test
       ImageId: ami-6cd6f714
       InstanceType: t2.nano
     Metadata:
-      AWS::CloudFormation::Designer:
+      'AWS::CloudFormation::Designer':
         id: 3d0c680b-30cf-4bef-863b-cd0a35ce50f3
     DependsOn:
       - EC2VPC1MWNT
   ELBLBMXMW:
-    Type: AWS::ElasticLoadBalancing::LoadBalancer
+    Type: 'AWS::ElasticLoadBalancing::LoadBalancer'
     Properties: {}
     Metadata:
-      AWS::CloudFormation::Designer:
+      'AWS::CloudFormation::Designer':
         id: e9a21dea-576c-4917-b590-3e9b13d67602
     DependsOn:
       - EC2VPC1MWNT
